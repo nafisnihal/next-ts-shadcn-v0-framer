@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import ModeToggle from "../ModeToggle";
 
 export default function Footer() {
-  const [theme, setTheme] = useState("light");
+  const [theme] = useState("dark");
 
   useEffect(() => {
     if (theme === "dark") {

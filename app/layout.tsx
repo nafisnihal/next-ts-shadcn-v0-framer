@@ -37,11 +37,17 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex flex-col justify-between h-screen">
+          {/* <div
+            className="relative before:absolute before:top-0 before:left-0 before:w-full
+     before:h-full before:content-[''] before:opacity-[0.05] before:z-10 before:pointer-events-none
+     before:bg-[url('https://res.cloudinary.com/dzl9yxixg/image/upload/noise_yvdidf.gif')]"
+          > */}
+          <div className="flex flex-col justify-between h-screen ">
             <Header />
             <div className="flex-grow">{children}</div>
             <Footer />
           </div>
+          {/* </div> */}
         </ThemeProvider>
       </body>
     </html>
